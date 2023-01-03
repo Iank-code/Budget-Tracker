@@ -1,0 +1,109 @@
+*, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+body .container {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .container input {
+  outline: none;
+  border-radius: 3px;
+}
+body .container h2 {
+  margin-bottom: 18px;
+}
+body .container .topSection > * {
+  margin: 0 35px;
+}
+body .container .bottomSection > * {
+  margin: 0 27px;
+}
+body .container .topSection .budgetInput {
+  border: 3px solid green;
+  padding: 25px 20px;
+  border-radius: 4px;
+}
+body .container .topSection .budgetInput input {
+  border: 1.5px solid green;
+}
+body .container .topSection #budgetCash, body .container .topSection #expenseCash, body .container .topSection #balanceCash {
+  display: flex;
+  flex-direction: column;
+}
+body .container .topSection #budgetCash > *, body .container .topSection #expenseCash > *, body .container .topSection #balanceCash > * {
+  margin: 4px 4px;
+}
+body .container .topSection #budgetCash > :last-child, body .container .topSection #expenseCash > :last-child, body .container .topSection #balanceCash > :last-child {
+  font-size: 26px;
+}
+body .container .topSection #budgetCash > :last-child, body .container .topSection #balanceCash > :last-child {
+  color: rgb(10, 248, 10);
+}
+body .container .topSection #expenseCash > :last-child {
+  color: red;
+}
+body .container .topSection svg {
+  color: blue;
+}
+body .container .topSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body .container .bottomSection {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+  padding: 25px 0;
+  border-radius: 4px;
+}
+body .container .bottomSection #remove {
+  display: flex;
+  flex-direction: column;
+}
+body .container .bottomSection #remove p {
+  cursor: pointer;
+  transition: ease-in-out;
+}
+body .container .bottomSection #remove p.hover {
+  color: red;
+}
+body .container .bottomSection .ExpenseInput {
+  border: 3px solid red;
+  padding: 25px 20px;
+  border-radius: 4px;
+}
+body .container .bottomSection .ExpenseInput #input {
+  border: 1.5px solid red;
+}
+body .container .bottomSection .ExpenseInput .expenseAmount {
+  padding: 15px 0;
+}
+body #addBudget {
+  color: green;
+  border: 1.6px solid green;
+  margin: 10px 0;
+}
+body #expenseValueInput {
+  color: red;
+  border: 1.6px solid red;
+}
+body button {
+  cursor: pointer;
+  background: transparent;
+  padding: 6px 4px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+body .valueList p {
+  color: red;
+}/*# sourceMappingURL=main.css.map */

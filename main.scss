@@ -1,0 +1,130 @@
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    .container{
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        input{
+            outline: none;
+            border-radius: 3px;
+        }
+
+        h2{
+            margin-bottom: 18px;
+        }
+
+
+        .topSection > *{
+            margin: 0 35px;
+        }
+        .bottomSection > *{
+            margin: 0 27px;
+        }
+
+        // top section
+        .topSection{
+            .budgetInput{
+                border: 3px solid green;
+                padding: 25px 20px;
+                border-radius: 4px;
+
+                input{
+                    border: 1.5px solid green;
+                }
+            }
+            #budgetCash,#expenseCash,#balanceCash{
+                display: flex;
+                flex-direction: column;
+            }
+
+            #budgetCash > * ,#expenseCash > * , #balanceCash > * {
+                margin: 4px 4px;
+            }
+            #budgetCash > :last-child ,#expenseCash > :last-child , #balanceCash > :last-child {
+                font-size: 26px;
+            }
+            #budgetCash > :last-child, #balanceCash > :last-child{
+                color: rgb(10, 248, 10);
+            }
+            #expenseCash > :last-child{
+                color: red;
+            }
+            svg{
+                color: blue;
+            }
+        }
+
+        .topSection{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        // Bottom Section
+        .bottomSection{
+            display: flex;
+            flex-direction: row;
+            margin-top: 25px;
+            // margin-left: -400px;
+            padding: 25px 0;
+            border-radius: 4px;
+
+            #remove{
+                display: flex;
+                flex-direction: column;
+
+                p{
+                    cursor: pointer;
+                    transition: ease-in-out;
+                }
+                p.hover{
+                    color: red;
+                }
+            }
+            .ExpenseInput{
+                border: 3px solid red;
+                padding: 25px 20px;
+                border-radius: 4px;
+
+                #input{
+                    border: 1.5px solid red;
+                }
+
+                .expenseAmount{
+                    padding: 15px 0;
+                }
+            }
+        }
+
+    }
+    #addBudget{
+        color: green;
+        border: 1.6px solid green;
+        margin: 10px 0;
+    }
+    #expenseValueInput{
+        color: red;
+        border: 1.6px solid red;
+    }
+    button{
+        cursor: pointer;
+        background: transparent;
+        padding: 6px 4px;
+        border-radius: 6px;
+        font-weight: 500;
+    }
+    .valueList{
+        p{
+            color: red;
+        }
+    }
+
+}
